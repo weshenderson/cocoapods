@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "BrazeEngine"
-  s.version      = "1.2.0-rc"
+  s.version      = "1.2.0"
   s.summary      = "Integration library for Factual's Engine SDK and Braze iOS SDK"
   s.description  = <<-DESC  		   
   		   "Integration library for Factual's Engine SDK and Braze iOS SDK""
@@ -9,11 +9,11 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "Factual Inc" => "mobile@factual.com" }
   s.platform     = :ios
-  s.source       = { :http => "https://factual.bintray.com/files/braze-engine-ios-1.2.0.tar.gz", :flatten => true }
+  s.source       = { :http => "https://factual.bintray.com/files/braze-engine-ios-#{s.version.to_s}.tar.gz", :flatten => true }
   s.source_files         = "*.h"
   s.preserve_paths       = "libBrazeEngine.a"
   s.ios.vendored_library = "libBrazeEngine.a"
   s.libraries            = "z"  
-  s.dependency "Appboy-iOS-SDK"
-  s.dependency "FactualEngineSDK", "~> 8.0"
+  s.dependency "Appboy-iOS-SDK", "~> 3.3.1"
+  s.dependency "FactualEngineSDK", "~> 7.0"
 end
