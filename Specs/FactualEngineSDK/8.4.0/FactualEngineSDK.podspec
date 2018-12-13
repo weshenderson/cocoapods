@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.platform             = :ios
   s.source               = { :http => "https://factual.bintray.com/files/factual-engine-sdk-ios-#{s.version.to_s}.tar.gz", :flatten => true }
   s.source_files         = "*.h"
+  s.static_framework     = true
   s.preserve_paths       = "libFactualEngine.a"
   s.libraries            = "c++", "z"  
   s.ios.vendored_library = "libFactualEngine.a"
