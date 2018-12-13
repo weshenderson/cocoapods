@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.preserve_paths       = "libBrazeEngine.a"
   s.ios.vendored_library = "libBrazeEngine.a"
   s.libraries            = "z"  
-  s.dependency "Appboy-iOS-SDK", "~> 3.3.1"
-  s.dependency "FactualEngineSDK", "~> 7.0"
+  s.dependency "Appboy-iOS-SDK"
+  s.dependency "FactualEngineSDK", "~> 8.4"
 end
